@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>day16_customer</display-name>
+
+
+	<servlet>
+		<servlet-name>AddCustomer</servlet-name>
+		<servlet-class>cn.panda.web.controller.AddCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCustomer</servlet-name>
+		<url-pattern>/servlet/AddCustomerServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ListCustomer</servlet-name>
+		<servlet-class>cn.panda.web.controller.ListCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListCustomer</servlet-name>
+		<url-pattern>/servlet/ListCustomerServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateCustomer</servlet-name>
+		<servlet-class>cn.panda.web.controller.UpdateCustomer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCustomer</servlet-name>
+		<url-pattern>/servlet/UpdateCustomer</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>DeleteCustomer</servlet-name>
+		<servlet-class>cn.panda.web.controller.DeleteCustomer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteCustomer</servlet-name>
+		<url-pattern>/servlet/DeleteCustomer</url-pattern>
+	</servlet-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
